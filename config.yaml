@@ -28,7 +28,7 @@ menu:
 params:
   ShowReadingTime: true
   ShowCodeCopyButtons: true
-  favicon: "<static/favicon.png>"
+  favicon: "static/favicon.png"
   math: true
   env: production
   ShowFullTextinRSS: true
@@ -78,30 +78,30 @@ params:
 
       >
       * **DiPietro, D. M.**, & Zhu, B. (2022). Symplectically Integrated Symbolic Regression of Hamiltonian
-        Dynamical Systems. arXiv:2209.01521. [Paper](https://arxiv.org/pdf/2209.01521.pdf).
+        Dynamical Systems. *arXiv:2209.01521*. [Paper](https://arxiv.org/pdf/2209.01521.pdf).
       >
       * **DiPietro, D. M.**, & Hazari, V. D. (2022). DiPietro-Hazari Kappa: A Novel Metric for Assessing
-        Labeling Quality via Annotation. arXiv:2209.08243. [Paper](https://arxiv.org/pdf/2209.08243.pdf).
+        Labeling Quality via Annotation. *arXiv:2209.08243*. [Paper](https://arxiv.org/pdf/2209.08243.pdf).
       >
       * **DiPietro, D. M.** (2022). Quantitative Stopword Generation for Sentiment Analysis via Recursive
-        and Iterative Deletion. arXiv:2209.01519. [Paper](https://arxiv.org/pdf/2209.01519.pdf).
+        and Iterative Deletion. *arXiv:2209.01519*. [Paper](https://arxiv.org/pdf/2209.01519.pdf).
       >
       * **DiPietro, D. M.**, Hazari, V. D., & Vosoughi, S. (2022). Robin: A Novel Online Suicidal Text Corpus
-        of Substantial Breadth and Scale. arXiv:2209.05707. [Paper](https://arxiv.org/pdf/2209.05707.pdf).
+        of Substantial Breadth and Scale. *arXiv:2209.05707*. [Paper](https://arxiv.org/pdf/2209.05707.pdf).
       >
       * **DiPietro, D. M.**, Xiong, S., & Zhu, B. (2020). Sparse Symplectically Integrated Neural Networks.
-        Advances in Neural Information Processing Systems. [Paper](https://proceedings.neurips.cc/paper/2020/file/439fca360bc99c315c5882c4432ae7a4-Paper.pdf).
+        *Advances in Neural Information Processing Systems*. [Paper](https://proceedings.neurips.cc/paper/2020/file/439fca360bc99c315c5882c4432ae7a4-Paper.pdf).
       >
       * Deng, Y., Zhang, Y., He, X., Yang, S., Tong, Y., Zhang, M., **DiPietro, D. M.**, & Zhu, B. (2020).
-        Soft Multicopter Control using Neural Dynamics Identification. Conference on Robot Learning.
+        Soft Multicopter Control using Neural Dynamics Identification. *Conference on Robot Learning.*
         [Paper](https://proceedings.mlr.press/v155/deng21a.html).
       >
       * Fleiss, A., Cui, H., Stoikov, S., & **DiPietro, D. M.** (2020). Constructing Equity Portfolios from SEC
-        13F Data Using Feature Extraction and Machine Learning. Journal of Financial Data Science, 2(1),
+        13F Data Using Feature Extraction and Machine Learning. *Journal of Financial Data Science, 2(1)*,
         45-60. [Paper](https://jfds.pm-research.com/content/early/2019/12/10/jfds.2019.1.022).
       >
       * **DiPietro, D. M.** (2019). Alpha Cloning: Using Quantitative Techniques and SEC 13F Data for
-        Equity Portfolio Optimization and Generation. Journal of Financial Data Science, 1(4), 159-171.
+        Equity Portfolio Optimization and Generation. *Journal of Financial Data Science, 1(4)*, 159-171.
          [Paper](https://jfds.pm-research.com/content/1/4/159.short).
 
       ## Software Projects
