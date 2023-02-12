@@ -1,7 +1,7 @@
 baseURL: https://dandipietro.com/
 languageCode: en-us
 title: Dan DiPietro
-theme: papermod
+theme: PaperMod
 paginate: 5
 buildDrafts: false
 
