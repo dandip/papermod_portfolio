@@ -1,0 +1,156 @@
+baseURL: https://dandipietro.com/
+languageCode: en-us
+title: Dan DiPietro
+theme: papermod
+paginate: 5
+buildDrafts: false
+
+menu:
+    main:
+        - name: About
+          weight: 5
+        - name: Research
+          url: /research
+          weight: 10
+        - name: Software Projects
+          url: /software
+          weight: 20
+        - name: CV
+          url: CVDiPietro_curr.pdf
+          weight: 25
+        - name: Blog
+          url: https://isomorphic.group
+          weight: 30
+        - name: Notes
+          url: https://notes.isomorphic.group
+          weight: 50
+
+params:
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  favicon: "<static/favicon.png>"
+  math: true
+  env: production
+  ShowFullTextinRSS: true
+  homeInfoParams:
+    Title: 
+    Content: >
+      ![alt text](/me.PNG)
+
+      >
+
+      Hi there! I’m Dan.
+
+      >
+
+      I'm a researcher, computer scientist, and mathematician based out of
+      New York City. I currently work at Jane Street Capital, a quantitative
+      trading firm.
+
+      >
+
+      I really like building things--the entire process, from ideation to implementation.
+      I think we have an obligation to leave the world better than we found it,
+      and I believe my best way of doing so is through technological innovation and research.
+
+      As of late, I've been most interested in non-convex optimization, computational physics,
+      AI alignment, and natural language processing.
+
+      >
+
+      I consider myself a life-long learner--I read textbooks and research papers in my free time,
+      and I'm making an effort to consolidate my notes [here](https://notes.isomorphic.group).
+      I'm passionate about effective technical communication and writing; you can find my
+      blog [here](https://isomorphic.group).
+
+      >
+
+      If you'd like to contact me, I can be reached at: `dan DOT dipietro DOT pub @ gmail DOT com`
+
+      >
+
+      ## Research
+
+      >
+
+      For detailed information on my research, please see the appropriate [page](/research).
+      Also, my Google Scholar profile is available [here](https://scholar.google.com/citations?user=s_wSZlAAAAAJ&hl=en).
+
+      >
+      * **DiPietro, D. M.**, & Zhu, B. (2022). Symplectically Integrated Symbolic Regression of Hamiltonian
+        Dynamical Systems. arXiv:2209.01521. [Paper](https://arxiv.org/pdf/2209.01521.pdf).
+      >
+      * **DiPietro, D. M.**, & Hazari, V. D. (2022). DiPietro-Hazari Kappa: A Novel Metric for Assessing
+        Labeling Quality via Annotation. arXiv:2209.08243. [Paper](https://arxiv.org/pdf/2209.08243.pdf).
+      >
+      * **DiPietro, D. M.** (2022). Quantitative Stopword Generation for Sentiment Analysis via Recursive
+        and Iterative Deletion. arXiv:2209.01519. [Paper](https://arxiv.org/pdf/2209.01519.pdf).
+      >
+      * **DiPietro, D. M.**, Hazari, V. D., & Vosoughi, S. (2022). Robin: A Novel Online Suicidal Text Corpus
+        of Substantial Breadth and Scale. arXiv:2209.05707. [Paper](https://arxiv.org/pdf/2209.05707.pdf).
+      >
+      * **DiPietro, D. M.**, Xiong, S., & Zhu, B. (2020). Sparse Symplectically Integrated Neural Networks.
+        Advances in Neural Information Processing Systems. [Paper](https://proceedings.neurips.cc/paper/2020/file/439fca360bc99c315c5882c4432ae7a4-Paper.pdf).
+      >
+      * Deng, Y., Zhang, Y., He, X., Yang, S., Tong, Y., Zhang, M., **DiPietro, D. M.**, & Zhu, B. (2020).
+        Soft Multicopter Control using Neural Dynamics Identification. Conference on Robot Learning.
+        [Paper](https://proceedings.mlr.press/v155/deng21a.html).
+      >
+      * Fleiss, A., Cui, H., Stoikov, S., & **DiPietro, D. M.** (2020). Constructing Equity Portfolios from SEC
+        13F Data Using Feature Extraction and Machine Learning. Journal of Financial Data Science, 2(1),
+        45-60. [Paper](https://jfds.pm-research.com/content/early/2019/12/10/jfds.2019.1.022).
+      >
+      * **DiPietro, D. M.** (2019). Alpha Cloning: Using Quantitative Techniques and SEC 13F Data for
+        Equity Portfolio Optimization and Generation. Journal of Financial Data Science, 1(4), 159-171.
+         [Paper](https://jfds.pm-research.com/content/1/4/159.short).
+
+      ## Software Projects
+
+      >
+
+      For detailed information on my software projects, please see the appropriate
+      [page](/software). Most of my research has involved exciting and novel
+      computational implementations; these are recorded on the [research page](/research).
+
+      >
+      * **Fairer Features**: ML pipeline that uses computer vision and large language
+        models to extract latent
+        demographic and portrayal information from image datasets. A novel optimization approach
+        re-weights the images to reduce any present biases. Interviewed for YCombinator 2023W.
+      >
+      * **DSRPytorch**: From-scratch PyTorch implementation of Deep Symbolic Regression.
+      Implements RL policy gradients, batching of variable-length sequences, and
+      a sequence-to-PyTorch transpiler (allowing models to write PyTorch code).
+      
+      >
+      * **GPU Optimization Code**: Implemented a conjugate gradient solver using
+      CUDA. Via some clever computational tricks, my implementation beats a
+      naive GPU implementation by 10x.
+
+      >
+      * **D2 BioSoftware**: Computer vision project that detects and counts
+      the number of bacterial colonies present on a petri dish. Implemented using
+      OpenCV and Electron; used by the McGowan Institue of Regenerative Medicine
+      at the University of Pittsburgh.
+
+      ## Miscellaneous
+
+      >
+      * I'm an avid botanist and carnivorous plant collector, specializing in the genera
+        *Nepenthes*, *Heliamphora*, and *Drosera*. I
+        write about my plants [here](https://www.carnivorousjourney.com/)
+        and have published a book on them, available 
+        [here](https://shopbritpress.org/products/nj-drosera).
+      >
+      * I really like the outdoors, especially skiing and mountaineering. I'm slowly
+        working my way through climbing all peaks in Colorado above 14,000 feet (affectionately
+        called the 14ers). I did 11 last summer!
+      >
+      * I play jazz piano and drums. 
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
