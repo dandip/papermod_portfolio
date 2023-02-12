@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dan DiPietro</title><link>https://dandipietro.com/</link><description>Recent content on Dan DiPietro</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dandipietro.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Research</title><link>https://dandipietro.com/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandipietro.com/research/</guid><description>I enjoy lots of flavors of research. My favorite problems combine novel mathematical thinking with challenging computational implementations.
+I will do my best to provide high-level summaries of my work here&amp;ndash;they probably won&amp;rsquo;t make sense without domain knowledge. I think there&amp;rsquo;s no substitute for reading the abstract or the paper itself (most of these are freely available).
+Machine Learning (Computational Physics) DiPietro, D. M., &amp;amp; Zhu, B. (2022). Symplectically Integrated Symbolic Regression of Hamiltonian Dynamical Systems.</description><content:encoded><![CDATA[<p>I enjoy lots of flavors of research. My favorite problems combine novel mathematical
+thinking with challenging computational implementations.</p>
+<p>I will do my best to provide high-level summaries of my work here&ndash;they probably won&rsquo;t
+make sense without domain knowledge. I think there&rsquo;s no substitute for reading
+the abstract or the paper itself (most of these are freely available).</p>
+<h2 id="machine-learning-computational-physics">Machine Learning (Computational Physics)</h2>
+<p><strong>DiPietro, D. M.</strong>, &amp; Zhu, B. (2022). Symplectically Integrated Symbolic Regression of Hamiltonian
+Dynamical Systems. <em>arXiv:2209.01521</em>. <a href="https://arxiv.org/pdf/2209.01521.pdf">Paper</a>.
+<img loading="lazy" src="/SISR.PNG" alt="alt text"  />
+</p>
+<ul>
+<li><em>Fundamental Question</em>: How can we learn symbolic governing equations from observational data of physical dynamical systems?</li>
+<li>We present a novel machine learning framework for answering this question. It works
+in the following way:
+<ol>
+<li>We use some specially constructed symplectic neural networks to deduce algebraic
+properties of the governing equations, such as additive separability.</li>
+<li>Next, an LSTM-RNN autoregressively generates a sequence of operators/system variables that
+corresponds to the pre-order traversal of an expression tree for some symbolic equation. Specifically,
+the LSTM-RNN is structured to generate separable physics equations called <a href="https://en.wikipedia.org/wiki/Hamiltonian_mechanics">Hamiltonians</a>.</li>
+<li>We transpile the expression trees into Pytorch code so that we can optimize their constants with auto-differentiation.</li>
+<li>We use the expression tree to time-evolve the physical system by symplectically integrating it. The error
+that we get in doing so is our loss function.</li>
+<li>Due to the transpiling step, we lose end-to-end differentiability. So, we train the LSTM-RNN with a     reinforcement learning approach called risk-seeking policy gradients.</li>
+<li>We go back to step 2 and repeat until we&rsquo;re satisfied with the generated equation.</li>
+</ol>
+</li>
+<li><em>My Contribution</em>: This was my senior thesis&ndash;I&rsquo;m responsible for the implementation, nearly all of the ideation, and the paper. My advisor suggested step 1, which greatly improved performance. The variable-length batching code of the LSTM-RNN, as well as the transpiler, presented fun technical
+challenges.</li>
+</ul>
+<hr>
+<p><strong>DiPietro, D. M.</strong>, Xiong, S., &amp; Zhu, B. (2020). Sparse Symplectically Integrated Neural Networks.
+<em>Advances in Neural Information Processing Systems</em>. <a href="https://proceedings.neurips.cc/paper/2020/file/439fca360bc99c315c5882c4432ae7a4-Paper.pdf">Paper</a>.
+<img loading="lazy" src="/SSINN.PNG" alt="alt text"  />
+</p>
+<ul>
+<li><em>Fundamental Question</em>: How can we learn symbolic governing equations from observational data of physical dynamical systems?</li>
+<li>We present a novel machine learning framework for answering this question. It works
+in the following way:
+<ol>
+<li>Pick some finite function space, i.e. 6th order polynomials, perhaps with some trigonometric terms.</li>
+<li>Implement a neural network that encodes this function space, with the coefficients of each term
+being trainable parameters.</li>
+<li>To obtain loss, symplectically integrate the neural network (making this a form of neural differential equation) and take the L1-error between its predicted
+future state of the physical system and the physical systems actual future state. Train the network until
+it converges (you have your equation) or fails to (pick a different function space).</li>
+</ol>
+</li>
+<li><em>Code</em>: <a href="https://github.com/dandip/ssinn">https://github.com/dandip/ssinn</a></li>
+<li><em>My Contribution</em>: My co-authors helped with the numerical integration code. I&rsquo;m otherwise responsible for the ideation, implemenation, and paper.</li>
+</ul>
+<hr>
+<p>Deng, Y., Zhang, Y., He, X., Yang, S., Tong, Y., Zhang, M., <strong>DiPietro, D. M.</strong>, &amp; Zhu, B. (2020).
+Soft Multicopter Control using Neural Dynamics Identification. <em>Conference on Robot Learning</em>.
+<a href="https://proceedings.mlr.press/v155/deng21a.html">Paper</a>.
+<img loading="lazy" src="/drone.PNG" alt="alt text"  />
+</p>
+<ul>
+<li><em>Fundamental Question</em>: How do we effectively control a soft-bodied drone? These drones can deform
+to get through small spaces and can crash without sustaining as much damage as a stiff drone.</li>
+<li><em>My Contribution</em>: I wrote a soft-bodied physics engine used to generate training data for this paper.
+My implementation used the finite element method and a neo-Hookean model of elasticity. It was written in C++ using the Eigen library and can run in real-time.</li>
+</ul>
+<h2 id="machine-learning-natural-language-processing">Machine Learning (Natural Language Processing)</h2>
+<p><strong>DiPietro, D. M.</strong> (2022). Quantitative Stopword Generation for Sentiment Analysis via Recursive
+and Iterative Deletion. <em>arXiv:2209.01519</em>. <a href="https://arxiv.org/pdf/2209.01519.pdf">Paper</a>.</p>
+<ul>
+<li><em>Fundamental Question</em>: How do we rigorously generate a set of stopwords?</li>
+<li><em>My technique</em>:
+<ol>
+<li>Take a pre-trained transformer (DistilBERT).</li>
+<li>Perform an iterative feature deletion on every word in its vocabulary.</li>
+<li>Rank the words in order of how much their deletion degrades performance (measured as AUC) on the test set.</li>
+</ol>
+</li>
+<li>When training new models, my best stopword set reduced corpus size by 63.7% while only reducing
+accuracy by 2.8%. A smaller stopword set reduced corpus size by 16% without affecting performance.</li>
+</ul>
+<hr>
+<p><strong>DiPietro, D. M.</strong>, Hazari, V. D., &amp; Vosoughi, S. (2022). Robin: A Novel Online Suicidal Text Corpus
+of Substantial Breadth and Scale. <em>arXiv:2209.05707</em>. <a href="https://arxiv.org/pdf/2209.05707.pdf">Paper</a>.</p>
+<ul>
+<li><em>Fundamental Question</em>: How do we create models that accurate classify suicidal text?</li>
+<li>We scrape 1.1m suicidal social media posts and use them to fine-tune a BERT model, achieving SOTA
+on this task.</li>
+<li><em>Code</em>: <a href="https://github.com/dandip/DH_Kappa">https://github.com/dandip/DH_Kappa</a></li>
+<li><em>My Contribution</em>: I wrote all of the code&ndash;otherwise even contribution amongst co-authors.</li>
+</ul>
+<h2 id="statistics-theory">Statistics Theory</h2>
+<p><strong>DiPietro, D. M.</strong>, &amp; Hazari, V. D. (2022). DiPietro-Hazari Kappa: A Novel Metric for Assessing
+Labeling Quality via Annotation. <em>arXiv:2209.08243</em>. <a href="https://arxiv.org/pdf/2209.08243.pdf">Paper</a>.</p>
+<ul>
+<li><em>Fundamental Question</em>: Suppose a dataset is labeled via some heuristic. The same dataset is then
+annotated by humans. How do we measure the &ldquo;goodness&rdquo; of our heuristic labels in the context of our
+human annotation labels?</li>
+<li><em>Our technique</em>: We present a novel statistical/probabilistic approach inspired by Fleiss&rsquo;s Kappa. At a high level, we measure the annotator agreement different that was attained above random chance. We also offer a performant matrix implementation.</li>
+<li><em>My Contribution</em>: Ideation on this was 50/50 with my co-author. I formalized our math, derived the matrix formulation, and did the <a href="https://github.com/dandip/DH_Kappa">code implementation</a>.</li>
+</ul>
+<h2 id="quantitative-finance">Quantitative Finance</h2>
+<p>Fleiss, A., Cui, H., Stoikov, S., &amp; <strong>DiPietro, D. M.</strong> (2020). Constructing Equity Portfolios from SEC
+13F Data Using Feature Extraction and Machine Learning. <em>Journal of Financial Data Science</em>, 2(1),
+45-60. <a href="https://jfds.pm-research.com/content/early/2019/12/10/jfds.2019.1.022">Paper</a>. <em>not open access :(</em></p>
+<ul>
+<li><em>Fundamental Question</em>: How can we use SEC 13F data to quantitatively inform long-term investments?</li>
+<li>We extract features and use them to train gradient-boosted trees. This strategy earned 19.8% annualized in historical backtesting versus 9.5% for the S&amp;P 500 over the same time period.</li>
+</ul>
+<p><strong>DiPietro, D. M.</strong> (2019). Alpha Cloning: Using Quantitative Techniques and SEC 13F Data for
+Equity Portfolio Optimization and Generation. <em>Journal of Financial Data Science</em>, 1(4), 159-171.
+<a href="https://jfds.pm-research.com/content/1/4/159.short">Paper</a>. <em>not open access :(</em></p>
+<ul>
+<li><em>Fundamental Question</em>: How can we use SEC 13F data to quantitatively inform long-term investments?</li>
+<li>I employ some naive heuristics that are able to beat the S&amp;P 500 over a five-year backtested period (95% vs 72%).</li>
+</ul>
+]]></content:encoded></item><item><title>Software Projects</title><link>https://dandipietro.com/software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandipietro.com/software/</guid><description>I&amp;rsquo;ve been programming since I was 11 years old. These days, I mostly write Python code. In the past, I enjoyed writing C/C++/CUDA (and dabbled in JavaScript).
+Fairer Features I think fairness in ML is of utmost importance. Fairer Features is a production modeling pipeline that, given an image dataset, can produce a detailed PDF report conveying the demographic make-up of the dataset (race, age, sex), as well as how each demographic group is depicted.</description><content:encoded><![CDATA[<p>I&rsquo;ve been programming since I was 11 years old. These days, I mostly write Python
+code. In the past, I enjoyed writing C/C++/CUDA (and dabbled in JavaScript).</p>
+<h3 id="fairer-features">Fairer Features</h3>
+<p>I think fairness in ML is of utmost importance. Fairer Features is a production modeling pipeline
+that, given an image dataset, can produce a detailed PDF report conveying the demographic make-up
+of the dataset (race, age, sex), as well as how each demographic group is depicted. The modeling pipeline
+consists of CNNs and Large-Language Models, employing novel techniques for obtaining demographic depiction information. These techniques incorporate adversarial feedback loops that serve to reduce any encoded bias in the pipeline.</p>
+<p>Originally, I planned on launching this code into a startup&ndash;I interviewed with YCombinator for their 2023W batch. However, I think I&rsquo;ll end up open-sourcing it soon, in addition to releasing a paper.</p>
+<h3 id="dsrpytorch">DSRPytorch</h3>
+<p>I really liked the deep symbolic regression <a href="https://arxiv.org/abs/1912.04871">paper</a>. The authors
+only released a TensorFlow implemenation&ndash;I wanted to use this method for my own research, and I prefer
+PyTorch. So, I read the paper and implemented it in PyTorch. There were some cool parts involved, such as
+batching of variable-length sequences and a sequence-to-PyTorch transpiler. The code is available <a href="https://github.com/dandip/DSRPytorch">here</a>.</p>
+<h3 id="gpu-optimization-code">GPU Optimization Code</h3>
+<p>I wrote a conjugate gradient solver using CUDA. I employed some fun computational tricks, which enabled my code to outperform a naive GPU implementation by an order of magnitude: (1) <a href="https://en.wikipedia.org/wiki/Loop_unrolling">Loop unrolling</a>; (2) Various <a href="https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/">data optimizations</a> involving both concurrency and access patterns; (3) Floating point precision starts out very coarse and gradually becomes more precise as the algorithm iteratively approaches its tolerance</p>
+<h3 id="d2-biosoftware">D2 BioSoftware</h3>
+<p>Using OpenCV and Electron, I wrote an application for ingesting images of petri dishes and computing
+how many bacterial colonies are present. Under the hood, I use a variety of image-processing techniques
+like bilateral filtering, adaptive threshold, and various other transformations. Then, I binarize the transformed image and feed it into some blob detection code that I wrote.</p>
+<p>This Software is currently used by the McGowan Institue of Regenerative Medicine at the University of Pittsburgh.</p>
+]]></content:encoded></item></channel></rss>
