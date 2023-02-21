@@ -27,6 +27,7 @@ that we get in doing so is our loss function.</li>
 <li>We go back to step 2 and repeat until we&rsquo;re satisfied with the generated equation.</li>
 </ol>
 </li>
+<li><em>Code</em>: <a href="https://github.com/dandip/SISR">https://github.com/dandip/SISR</a></li>
 <li><em>My Contribution</em>: This was my senior thesis&ndash;I&rsquo;m responsible for the implementation, nearly all of the ideation, and the paper. My advisor suggested step 1, which greatly improved performance. The variable-length batching code of the LSTM-RNN, as well as the transpiler, presented fun technical
 challenges.</li>
 </ul>
