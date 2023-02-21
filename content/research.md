@@ -29,6 +29,7 @@ Dynamical Systems. *arXiv:2209.01521*. [Paper](https://arxiv.org/pdf/2209.01521.
       that we get in doing so is our loss function.
     5. Due to the transpiling step, we lose end-to-end differentiability. So, we train the LSTM-RNN with a     reinforcement learning approach called risk-seeking policy gradients.
     6. We go back to step 2 and repeat until we're satisfied with the generated equation.
+* *Code*: https://github.com/dandip/SISR
 * *My Contribution*: This was my senior thesis--I'm responsible for the implementation, nearly all of the ideation, and the paper. My advisor suggested step 1, which greatly improved performance. The variable-length batching code of the LSTM-RNN, as well as the transpiler, presented fun technical
 challenges.
 
