@@ -121,7 +121,7 @@ code. In the past, I enjoyed writing C/C++/CUDA (and dabbled in JavaScript).</p>
 <p>I think fairness in ML is of utmost importance. Fairer Features is a production modeling pipeline
 that, given an image dataset, can produce a detailed PDF report conveying the demographic make-up
 of the dataset (race, age, sex), as well as how each demographic group is depicted. The modeling pipeline
-consists of CNNs and Large-Language Models, employing novel techniques for obtaining demographic depiction information. These techniques incorporate adversarial feedback loops that serve to reduce any encoded bias in the pipeline.</p>
+consists of CNNs and Large-Language Models, employing novel techniques for obtaining demographic depiction information.</p>
 <p>Originally, I planned on launching this code into a startup&ndash;I interviewed with YCombinator for their 2023W batch. However, I think I&rsquo;ll end up open-sourcing it soon, in addition to releasing a paper.</p>
 <h3 id="dsrpytorch">DSRPytorch</h3>
 <p>I really liked the deep symbolic regression <a href="https://arxiv.org/abs/1912.04871">paper</a>. The authors
