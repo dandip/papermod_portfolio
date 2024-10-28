@@ -21,9 +21,6 @@ menu:
         - name: Blog
           url: https://isomorphic.group
           weight: 30
-        - name: Notes
-          url: https://notes.isomorphic.group
-          weight: 50
 
 params:
   ShowReadingTime: true
