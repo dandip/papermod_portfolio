@@ -1,6 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dan DiPietro</title><link>https://dandipietro.com/</link><description>Recent content on Dan DiPietro</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dandipietro.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Research</title><link>https://dandipietro.com/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandipietro.com/research/</guid><description>I enjoy lots of flavors of research. My favorite problems combine novel mathematical thinking with challenging computational implementations.
-I will do my best to provide high-level summaries of my work here&amp;ndash;they probably won&amp;rsquo;t make sense without domain knowledge. I think there&amp;rsquo;s no substitute for reading the abstract or the paper itself (most of these are freely available).
-Machine Learning (Computational Physics) DiPietro, D. M., &amp;amp; Zhu, B. (2022). Symplectically Integrated Symbolic Regression of Hamiltonian Dynamical Systems.</description><content:encoded><![CDATA[<p>I enjoy lots of flavors of research. My favorite problems combine novel mathematical
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dan DiPietro</title><link>https://dandipietro.com/</link><description>Recent content on Dan DiPietro</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dandipietro.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Research</title><link>https://dandipietro.com/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandipietro.com/research/</guid><description>&lt;p>I enjoy lots of flavors of research. My favorite problems combine novel mathematical
+thinking with challenging computational implementations.&lt;/p>
+&lt;p>I will do my best to provide high-level summaries of my work here&amp;ndash;they probably won&amp;rsquo;t
+make sense without domain knowledge. I think there&amp;rsquo;s no substitute for reading
+the abstract or the paper itself (most of these are freely available).&lt;/p>
+&lt;h2 id="machine-learning-computational-physics">Machine Learning (Computational Physics)&lt;/h2>
+&lt;p>&lt;strong>DiPietro, D. M.&lt;/strong>, &amp;amp; Zhu, B. (2022). Symplectically Integrated Symbolic Regression of Hamiltonian
+Dynamical Systems. &lt;em>arXiv:2209.01521&lt;/em>. &lt;a href="https://arxiv.org/pdf/2209.01521.pdf">Paper&lt;/a>.
+&lt;img loading="lazy" src="https://dandipietro.com/SISR.PNG" alt="alt text" />
+&lt;/p></description><content:encoded><![CDATA[<p>I enjoy lots of flavors of research. My favorite problems combine novel mathematical
 thinking with challenging computational implementations.</p>
 <p>I will do my best to provide high-level summaries of my work here&ndash;they probably won&rsquo;t
 make sense without domain knowledge. I think there&rsquo;s no substitute for reading
@@ -114,8 +121,13 @@ Equity Portfolio Optimization and Generation. <em>Journal of Financial Data Scie
 <li><em>Fundamental Question</em>: How can we use SEC 13F data to quantitatively inform long-term investments?</li>
 <li>I employ some naive heuristics that are able to beat the S&amp;P 500 over a five-year backtested period (95% vs 72%).</li>
 </ul>
-]]></content:encoded></item><item><title>Software Projects</title><link>https://dandipietro.com/software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandipietro.com/software/</guid><description>I&amp;rsquo;ve been programming since I was 11 years old. These days, I mostly write Python code. In the past, I enjoyed writing C/C++/CUDA (and dabbled in JavaScript).
-Fairer Features I think fairness in ML is of utmost importance. Fairer Features is a production modeling pipeline that, given an image dataset, can produce a detailed PDF report conveying the demographic make-up of the dataset (race, age, sex), as well as how each demographic group is depicted.</description><content:encoded><![CDATA[<p>I&rsquo;ve been programming since I was 11 years old. These days, I mostly write Python
+]]></content:encoded></item><item><title>Software Projects</title><link>https://dandipietro.com/software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dandipietro.com/software/</guid><description>&lt;p>I&amp;rsquo;ve been programming since I was 11 years old. These days, I mostly write Python
+code. In the past, I enjoyed writing C/C++/CUDA (and dabbled in JavaScript).&lt;/p>
+&lt;h3 id="fairer-features">Fairer Features&lt;/h3>
+&lt;p>I think fairness in ML is of utmost importance. Fairer Features is a production modeling pipeline
+that, given an image dataset, can produce a detailed PDF report conveying the demographic make-up
+of the dataset (race, age, sex), as well as how each demographic group is depicted. The modeling pipeline
+consists of CNNs and Large-Language Models, employing novel techniques for obtaining demographic depiction information.&lt;/p></description><content:encoded><![CDATA[<p>I&rsquo;ve been programming since I was 11 years old. These days, I mostly write Python
 code. In the past, I enjoyed writing C/C++/CUDA (and dabbled in JavaScript).</p>
 <h3 id="fairer-features">Fairer Features</h3>
 <p>I think fairness in ML is of utmost importance. Fairer Features is a production modeling pipeline
