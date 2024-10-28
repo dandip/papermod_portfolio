@@ -15,9 +15,6 @@ menu:
         - name: Software Projects
           url: /software
           weight: 20
-        - name: CV
-          url: CVDiPietro_curr.pdf
-          weight: 25
         - name: Blog
           url: https://isomorphic.group
           weight: 30
@@ -40,9 +37,11 @@ params:
 
       >
 
-      I'm a researcher, computer scientist, and mathematician based out of
-      New York City. I currently work at Jane Street Capital, a quantitative
-      trading firm.
+      I'm a researcher, computer scientist, and mathematician based out of San
+      Francisco. I began my career at Jane Street Capital, working on novel
+      non-convex optimization techniques and [redacted].  I left
+      to found [Lumenary](https://lumenary.com), an applied AI research
+      company backed by Y Combinator.
 
       >
 
@@ -50,19 +49,23 @@ params:
       I think we have an obligation to leave the world better than we found it,
       and I believe my best way of doing so is through technological innovation and research.
 
-      As of late, I've been most interested in non-convex optimization, computational physics,
-      AI alignment, and natural language processing.
+      As of late, I've been most interested in neural networks with physics-informed
+      inductive biases, novel product interfaces for AI technology, and long context vision
+      language models.
 
       >
 
-      I consider myself a life-long learner--I read textbooks and research papers in my free time,
-      and I'm making an effort to consolidate my notes [here](https://notes.isomorphic.group).
-      I'm passionate about effective technical communication and writing; you can find my
-      blog [here](https://isomorphic.group).
+      I consider myself a life-long learner--I read textbooks and research papers in my free time.
+      This is not limited to technical subjects; I spend much of my time thinking about social sciences
+      and humanities as well.
+      
+      I'm passionate about effective technical communication and writing; I occasionally post my writing
+      on my blog, [Isomorphic](https://isomorphic.group). 
 
       >
 
-      If you'd like to contact me, I can be reached at: `dan DOT dipietro DOT pub @ gmail DOT com`
+      If you'd like to contact me, I can be reached at: `dan DOT dipietro DOT pub @ gmail DOT com`. I'm
+      always excited to meet other folks doing interesting things in the valley.
 
       >
 
