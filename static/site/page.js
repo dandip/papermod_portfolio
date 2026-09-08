@@ -1,6 +1,6 @@
 (()=>{
 const canvas=document.getElementById('character');
-const character=new PixelCharacter(canvas,`${window.siteAssetPrefix || ''}site/sprites.png`);
+const character=new PixelCharacter(canvas,new URL('site/sprites.png',document.baseURI).href);
 character.x=220;
 character.loopScenes=true;
 

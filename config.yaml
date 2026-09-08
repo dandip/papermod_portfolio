@@ -1,4 +1,5 @@
 baseURL: https://dandipietro.com/
+relativeURLs: true
 languageCode: en-us
 title: Dan DiPietro
 theme: PaperMod

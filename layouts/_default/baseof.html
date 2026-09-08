@@ -10,7 +10,6 @@
     <link rel="preload" href="{{ "site/ibm-plex-sans.ttf" | relURL }}" as="font" type="font/ttf" crossorigin>
     <script>try{document.documentElement.dataset.theme=localStorage.getItem('color-theme')==='dark'?'dark':'light'}catch{}</script>
     <link rel="stylesheet" href="{{ "site/style.css" | relURL }}">
-    <script>window.siteAssetPrefix='{{ "/" | relURL }}';</script>
     <script defer src="{{ "site/theme.js" | relURL }}"></script>
   </head>
   <body{{ if .IsHome }} class="home-page"{{ end }}>
