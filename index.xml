@@ -6,7 +6,7 @@ the abstract or the paper itself (most of these are freely available).&lt;/p>
 &lt;h2 id="machine-learning-computational-physics">Machine Learning (Computational Physics)&lt;/h2>
 &lt;p>&lt;strong>DiPietro, D. M.&lt;/strong>, &amp;amp; Zhu, B. (2022). Symplectically Integrated Symbolic Regression of Hamiltonian
 Dynamical Systems. &lt;em>arXiv:2209.01521&lt;/em>. &lt;a href="https://arxiv.org/pdf/2209.01521.pdf">Paper&lt;/a>.
-&lt;img loading="lazy" src="https://dandipietro.com/SISR.PNG" alt="alt text" />
+&lt;img loading="lazy" src="./SISR.PNG" alt="alt text" />
 &lt;/p></description><content:encoded><![CDATA[<p>I enjoy lots of flavors of research. My favorite problems combine novel mathematical
 thinking with challenging computational implementations.</p>
 <p>I will do my best to provide high-level summaries of my work here&ndash;they probably won&rsquo;t
