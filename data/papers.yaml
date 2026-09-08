@@ -1,0 +1,84 @@
+groups:
+  - id: year-2022
+    heading: "2022"
+    entries:
+      - venue: arXiv
+        title: "DiPietro-Hazari Kappa: a novel metric for assessing labeling quality via annotation"
+        url: https://arxiv.org/abs/2209.08243
+        authors: "<strong>D. M. DiPietro</strong>, V Hazari"
+        links:
+          - label: Scholar
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:W7OEmFMy1HYC"
+          - label: Code
+            url: https://github.com/dandip/DH_Kappa
+      - venue: arXiv
+        title: "Robin: A Novel Online Suicidal Text Corpus of Substantial Breadth and Scale"
+        url: https://arxiv.org/abs/2209.05707
+        authors: "<strong>D. DiPietro</strong>, V Hazari, S Vosoughi"
+        links:
+          - label: Scholar
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:Tyk-4Ss8FVUC"
+      - venue: arXiv
+        title: "Symplectically integrated symbolic regression of Hamiltonian dynamical systems"
+        url: https://arxiv.org/abs/2209.01521
+        authors: "<strong>D. M. DiPietro</strong>, B Zhu"
+        links:
+          - label: Scholar
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:zYLM7Y9cAGgC"
+          - label: Code
+            url: https://github.com/dandip/SISR
+      - venue: arXiv
+        title: "Quantitative stopword generation for sentiment analysis via recursive and iterative deletion"
+        url: https://arxiv.org/abs/2209.01519
+        authors: "<strong>D. M. DiPietro</strong>"
+        links:
+          - label: Scholar
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:Y0pCki6q_DkC"
+  - id: year-2020
+    heading: "2020"
+    entries:
+      - venue: NeurIPS
+        title: "Sparse symplectically integrated neural networks"
+        url: https://arxiv.org/abs/2006.12972
+        authors: "<strong>D. M. DiPietro</strong>, S Xiong, B Zhu"
+        links:
+          - label: Scholar
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:2osOgNQ5qMEC"
+          - label: Code
+            url: https://github.com/dandip/ssinn
+      - venue: CoRL
+        title: "Soft Multicopter Control using Neural Dynamics Identification"
+        url: https://proceedings.mlr.press/v155/deng21a.html
+        authors: "Y Deng, Y Zhang, X He, S Yang, Y Tong, M Zhang, <strong>D. DiPietro</strong>, B Zhu"
+        links:
+          - label: Scholar
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:qjMakFHDy7sC"
+          - label: Supplement
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:YsMSGLbcyi4C"
+      - venue: JFDS
+        title: "Constructing equity portfolios from SEC 13F data using feature extraction and machine learning"
+        url: https://jfds.pm-research.com/content/early/2019/12/10/jfds.2019.1.022
+        authors: "A Fleiss, S Stoikov, H Cui, <strong>D. DiPietro</strong>"
+        links:
+          - label: Scholar
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:9yKSN-GCB0IC"
+  - id: year-2019
+    heading: "2019"
+    entries:
+      - venue: JFDS
+        title: "Alpha cloning: Using quantitative techniques and SEC 13F data for equity portfolio optimization and generation"
+        url: https://jfds.pm-research.com/content/1/4/159.short
+        authors: "<strong>D. M. DiPietro</strong>"
+        links:
+          - label: Scholar
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:d1gkVwhDpl0C"
+  - id: books
+    heading: "Book · 2020"
+    entries:
+      - venue: BRIT Press
+        title: "Drosera of the New Jersey Pinelands, U.S.A."
+        url: https://shopbritpress.org/products/nj-drosera
+        authors: "A Liu, <strong>D. DiPietro</strong>"
+        links:
+          - label: Scholar
+            url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=s_wSZlAAAAAJ&citation_for_view=s_wSZlAAAAAJ:UeHWp8X0CEIC"

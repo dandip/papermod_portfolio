@@ -1,0 +1,35 @@
+{{ define "main" }}
+<main>
+  <aside class="stage" aria-label="Animated pixel character">
+    <div class="stage-inner"><canvas id="character" width="680" height="320" role="img" aria-label="Pixel character who waves, walks, and acts out scenes"></canvas></div>
+  </aside>
+  <div class="story">
+    <section id="hello" data-scene="idle" aria-label="About Dan"><div class="section-copy">
+      <p>Hi, I’m Dan.</p>
+      <p>I’m a technologist spending time between San Francisco and New York City. I currently work at <a href="https://www.appliedcompute.com/">Applied Compute</a> as a research engineer. I previously co-founded and led <a href="https://www.ycombinator.com/companies/sharpe">Sharpe</a>, a YC-backed startup. Before that, I began my career at Jane Street Capital.</p>
+      <p>I enjoy working on, thinking about, and investing in technology startups. I believe startups are one of the best ways we have to solve hard problems and bring about a positive, prosperous future. Startups are difficult, but the hard work is often worth it.</p>
+    </div></section>
+    <section id="ideas" data-scene="blackboard" aria-label="Research"><div class="section-copy">
+      <p>Right now, I am mostly focused on post-training. In the past, I've worked on non-convex optimization, physics-informed machine learning, numerics, and many other kinds of statistics-oriented and quantitative work. Beyond research, I enjoy thinking cross-functionally and contributing to strategy, product, and go-to-market.</p>
+    </div></section>
+    <section id="elsewhere" data-scene="idle" aria-label="Hobbies and writing"><div class="section-copy">
+      <p>I have too many hobbies. I enjoy technical communication and writing. I journal frequently and occasionally post my writing online. I maintain a large collection of rare and exotic plants, specializing in the genera <em>Nepenthes</em>, <em>Heliamphora</em>, and <em>Drosera</em> (I blog about my plants <a href="https://www.carnivorousjourney.com/">here</a> and have published a <a href="https://shopbritpress.org/products/nj-drosera">book</a> on them). I spend time in the outdoors when I'm able, primarily skiing and mountaineering (I've summited around 15 peaks above 14,000 feet).</p>
+    </div></section>
+    <section id="contact" data-scene="idle" aria-label="Contact"><div class="section-copy">
+      <p>If you’d like to contact me, I can be reached at: dan DOT dipietro DOT pub @ gmail DOT com. Thoughtful emails from humans doing interesting things are welcome; please no AI-generated emails or sales pitches.</p>
+    </div></section>
+  </div>
+</main>
+<footer class="home-footer">San Francisco · <time id="san-francisco-time">Loading time…</time></footer>
+<script defer src="{{ "site/character.js" | relURL }}"></script>
+<script defer src="{{ "site/scroll-director.js" | relURL }}"></script>
+<script defer src="{{ "site/page.js" | relURL }}"></script>
+<script>
+(()=>{
+  const time=document.getElementById('san-francisco-time');
+  const format=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',timeZoneName:'short'});
+  const update=()=>time.textContent=format.format(new Date());
+  update();setInterval(update,60000);
+})();
+</script>
+{{ end }}

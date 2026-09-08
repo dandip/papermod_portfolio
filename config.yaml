@@ -22,7 +22,7 @@ menu:
 params:
   ShowReadingTime: true
   ShowCodeCopyButtons: true
-  favicon: "static/favicon.png"
+  favicon: "favicon-16x16.png"
   math: true
   env: production
   ShowFullTextinRSS: true

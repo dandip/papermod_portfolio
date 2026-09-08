@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main class="papers-main">
+  <h1>{{ .Title }}</h1>
+  <p class="papers-intro">Publications and preprints. <a href="https://scholar.google.com/citations?user=s_wSZlAAAAAJ&amp;hl=en">Google Scholar</a>.</p>
+  {{ range site.Data.papers.groups }}
+  <section class="paper-year" aria-labelledby="{{ .id }}">
+    <h2 id="{{ .id }}">{{ .heading }}</h2>
+    <ol>
+      {{ range .entries }}
+      <li class="paper">
+        <div class="paper-venue">{{ .venue }}</div>
+        <div>
+          <p class="paper-title"><a href="{{ .url }}">{{ .title }}</a></p>
+          <p class="paper-authors">{{ .authors | safeHTML }}</p>
+          {{ with .links }}<p class="paper-links">{{ range $index, $link := . }}{{ if $index }} <span aria-hidden="true">/</span> {{ end }}<a href="{{ $link.url }}">{{ $link.label }}</a>{{ end }}</p>{{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
+  {{ end }}
+</main>
+{{ end }}
